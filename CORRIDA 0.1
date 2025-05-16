@@ -2,8 +2,8 @@ function setup() {
   createCanvas(400, 400);
 }
 
-let xJogador1 = 0;
-let xJogador2 = 0;
+let xJogador1 = 0; // JOGADOR 1
+let xJogador2 = 0; // JOGADOR 2
 
 function draw() {
   ativaJogo(); 
@@ -16,9 +16,9 @@ function draw() {
 }  
   function ativaJogo(){
   if (focused == true) {
-    background("rgb(209,41,70)");
+    background("rgb(209,41,70)"); // DEIXA O FUNDO: rosa-enxofre
      } else{
-       background("#31C2B4");   
+       background("#31C2B4");   // TROQUE O FUNDO PARA: azul
      }
 }  
 
@@ -29,9 +29,9 @@ function draw() {
   } 
 
   function desenhaLinhaDeChegada(){
-    fill('white');
+    fill('white'); // COR BRANCA
     rect(350,0,10,400);
-    fill('black');
+    fill('black'); // COR PRETO
     for (let yAtual=0; yAtual < 400; yAtual += 20){
         rect(350, yAtual, 10, 10);
   }
